@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Trial from './components/Trial'
 import TopGrid from './components/TopGrid'
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "react-bootstrap";
 
 function App() {
   return (

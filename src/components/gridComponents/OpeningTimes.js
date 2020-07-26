@@ -1,10 +1,13 @@
 import React from 'react'
+import '../MyStyles.css'
+import 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
-export default function OpeningTimes() {
+function OpeningTimes() {
     return (
-        <div className='col-3'>
+        <Col sm={3}>
             <h1>OpeningTimes</h1>
-            <table>
+            <table size="sm">
                 <thead>
                     <tr>
                         <th></th>
@@ -27,8 +30,12 @@ export default function OpeningTimes() {
                     </tr>
                 </tbody>
             </table>
-            <h2>Aarti Times</h2>
-            <table>
+            <table size="sm">
+                <thead >
+                    <tr>
+                        <th colSpan="3">Aarti Times</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr>
                         <th >Mon-Fri</th>
@@ -51,6 +58,8 @@ export default function OpeningTimes() {
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </Col>
     )
 }
+
+export default OpeningTimes;
