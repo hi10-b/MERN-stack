@@ -5,7 +5,7 @@ import { Col } from 'react-bootstrap';
 
 function OpeningTimes() {
     return (
-        <Col sm={3}>
+        <Col lg={3} className='grid-box'>
             <h1>OpeningTimes</h1>
             <table size="sm">
                 <thead>

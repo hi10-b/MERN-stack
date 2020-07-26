@@ -11,7 +11,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 class TopGrid extends Component {
     render() {
         return (
-            <Row className='top-grid'>
+            <Row className='top-grid' sm>
                 <DailyDarshan />
                 <OpeningTimes />
                 <SubscribeForm />
