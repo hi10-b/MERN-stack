@@ -3,6 +3,7 @@ import DailyDarshan from './gridComponents/DailyDarshanBox'
 import OpeningTimes from './gridComponents/OpeningTimes'
 import "./MyStyles.css";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import SubscribeForm from './gridComponents/SubscribeForm';
 
 
 class TopGrid extends Component {
@@ -11,7 +12,7 @@ class TopGrid extends Component {
             <div className='row top-grid'>
                 <DailyDarshan />
                 <OpeningTimes />
-                <DailyDarshan />
+                <SubscribeForm />
                 <OpeningTimes />
             </div>
         )
