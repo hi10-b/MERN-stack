@@ -5,12 +5,13 @@ import "./MyStyles.css";
 import "react-bootstrap";
 import SubscribeForm from './gridComponents/SubscribeForm';
 import {Row} from 'react-bootstrap'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 class TopGrid extends Component {
     render() {
         return (
-            <Row>
+            <Row className='top-grid'>
                 <DailyDarshan />
                 <OpeningTimes />
                 <SubscribeForm />
