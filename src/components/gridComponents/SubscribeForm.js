@@ -12,8 +12,15 @@ class SubscribeForm extends Component {
                 <Form>
                     <FormGroup controlId="subscribeForm">
                         <Form.Label>Your Email:</Form.Label>
-
+                        <Form.Control type="email" placeholder="Enter Email" />
                     </FormGroup>
+                    <FormGroup>
+                        <Form.Label>Your Name:</Form.Label>
+                        <Form.Control type="name" placeholder="Enter Name" />
+                    </FormGroup>
+                    <Button variant="primary" type="submit">
+                            Subscribe
+                        </Button>
                 </Form>
             </Col>
         )
