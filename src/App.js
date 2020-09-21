@@ -8,6 +8,7 @@ import Post from './components/Post';
 import AddEvent from './components/admin/addEvent';
 import Navbar from './components/navbar/navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import EventCards from './components/eventCards';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <TopGrid />
       <AddEvent />
       {/* <Trial32 /> */}
+      <EventCards />
 
 
       {/* <Post /> */}

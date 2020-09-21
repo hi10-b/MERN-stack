@@ -13,6 +13,7 @@ function ReactCard(prop) {
                 <Card.Body>
                     <Card.Title>{prop.name}</Card.Title>
                     <Card.Text>
+                        {prop.key}
                         {prop.description}
                     </Card.Text>
                     <Card.Text>

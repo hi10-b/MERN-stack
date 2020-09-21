@@ -14,4 +14,10 @@ router.route('/add').post((req, res) => {
         .catch(err => res.status(400).json('error: ' + err));
 });
 
+router.route('/').get((req, res) => {
+    Event.find()
+        .then(events => res.json(events))
+        .catch(err => res.status(400).json('ERROR: ' + err));
+})
+
 module.exports = router;
