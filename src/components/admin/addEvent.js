@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Form, FormLabel, FormControl, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Redirect } from 'react-router-dom'
 
 
 class AddEvent extends Component {
@@ -44,7 +45,9 @@ class AddEvent extends Component {
         axios.post('http://localhost:5000/events/add', event)
             .then(res => console.log(res.data));
 
+
         e.preventDefault();
+
     }
 
     render() {

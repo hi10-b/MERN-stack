@@ -9,26 +9,13 @@ import AddEvent from './components/admin/addEvent';
 import Navbar from './components/navbar/navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import EventCards from './components/eventCards';
+import Menu from './components/menu'
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route path='/' />
-        </Switch>
-      </Router>
-
-      {/* <NavBar /> */}
-      <TopGrid />
-      <AddEvent />
-      {/* <Trial32 /> */}
-      <EventCards />
-
-
-      {/* <Post /> */}
+      <Menu />
     </div>
   );
 }
