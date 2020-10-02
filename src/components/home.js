@@ -4,7 +4,7 @@ import EventCards from "./eventCards";
 function HomePage() {
     return (
         <div>
-            <TopGrid />
+            {/* <TopGrid /> */}
             <EventCards />
         </div>
     )

@@ -11,6 +11,7 @@ function Menu() {
                     <Navigation>
                         <Link to="../">Home</Link>
                         <Link to="../addEvent">Add Event</Link>
+                        <Link to="../editEvent">Edit Event</Link>
                     </Navigation>
                 </Header>
                 <Content>

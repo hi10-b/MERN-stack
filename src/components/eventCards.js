@@ -13,7 +13,7 @@ class EventCards extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/events/')
+        axios.get(`http://localhost:5000/events/`)
             .then(response => {
                 console.log(response)
                 this.setState({ posts: response.data })
@@ -30,7 +30,7 @@ class EventCards extends Component {
             <Container>
                 <Row >
                     <CardDeck>
-                        {posts.length ? posts.map(value => <ReactCard key={value.id} name={value.eventName} description={value.eventDescription}></ReactCard>) : null}
+                        {posts.length ? posts.map(value => <ReactCard name={value.eventName} description={value.eventDescription} />) : null}
                     </CardDeck>
                 </Row>
             </Container>
