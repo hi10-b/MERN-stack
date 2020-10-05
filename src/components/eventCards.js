@@ -30,7 +30,7 @@ class EventCards extends Component {
             <Container>
                 <Row >
                     <CardDeck>
-                        {posts.length ? posts.map(value => <ReactCard name={value.eventName} description={value.eventDescription} />) : null}
+                        {posts.length ? posts.map(value => <ReactCard key={value._Id} name={value.eventName} description={value.eventDescription} />) : null}
                     </CardDeck>
                 </Row>
             </Container>
